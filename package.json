@@ -83,6 +83,10 @@
     "typescript": "^3.7.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@types/chart.js": "^2.9.23",
+    "@types/lodash": "^4.14.159",
+    "chart.js": "^2.9.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "lodash": "^4.17.20"
   }
 }
