@@ -27,5 +27,19 @@
  */
 
 import './index.css';
+import Chart from 'chart.js';
+import { range } from 'lodash';
 
-console.log('👋 This message is being logged by "renderer.js", included via webpack');
+const ctx = document.getElementById('chart') as HTMLCanvasElement;
+console.log(ctx);
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: range(7),
+      datasets: [{
+        label: 'test2',
+        data: [65, 60, 80, 82, 56, 55, 40],
+        fill: false,
+      }]
+    }
+});
